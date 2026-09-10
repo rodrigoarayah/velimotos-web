@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto y reserva de pruebas | Velimotor España</title>
+<meta name="description" content="Reserva una prueba, pide precio o infórmate sobre flotas y distribución de motos eléctricas Velimotor en España.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,500..800&family=Sora:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="fotos/logo-icono.png">
+<link rel="apple-touch-icon" href="fotos/logo-icono.png">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header class="barra">
+  <div class="env">
+    <a class="logo" href="index.html">VELIMOT<i>O</i>R</a>
+    <button class="abrir" aria-expanded="false" aria-controls="nav">Menú</button>
+    <ul class="nav" id="nav"><li><a href="modelos.html">Modelos</a></li><li><a href="tecnologia.html">Tecnología</a></li><li><a href="financiacion.html">Financiación</a></li><li><a href="puntos-de-venta.html">Puntos de venta</a></li><li><a href="empresas.html">Empresas</a></li><li><a href="nosotros.html">Nosotros</a></li></ul>
+    <a class="cta-barra" href="contacto.html">Reservar prueba</a>
+  </div>
+</header>
+<main>
+
+<section class="cabecera">
+  <div class="env">
+    <h1>Habla con nosotros</h1>
+    <p class="bajada">Respondemos el mismo día laborable. Si prefieres el teléfono, mejor
+      todavía.</p>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="env">
+    <div class="contacto">
+      <div>
+        <div class="directo">
+          <a href="tel:+34636546877">+34 636 546 877</a>
+          <a href="mailto:info@velimotos.es">info@velimotos.es</a>
+        </div>
+        <p style="color:var(--niebla);margin-top:26px">Si escribes para reservar una prueba, dinos
+          tu provincia. Estamos montando la red y organizamos las demostraciones por zonas, así
+          que saber dónde estás nos ayuda a llegar antes.</p>
+      </div>
+      <form id="form" novalidate>
+        <div class="dos">
+          <div class="campo"><label for="nombre">Nombre y apellidos</label>
+            <input id="nombre" name="nombre" type="text" autocomplete="name" required></div>
+          <div class="campo"><label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" required></div>
+        </div>
+        <div class="dos">
+          <div class="campo"><label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="email" required></div>
+          <div class="campo"><label for="provincia">Provincia</label>
+            <input id="provincia" name="provincia" type="text" autocomplete="address-level2"></div>
+        </div>
+        <div class="dos">
+          <div class="campo"><label for="interes">Me interesa</label>
+            <select id="interes" name="interes">
+              <option>Reservar una prueba</option><option>Comprar una moto</option>
+              <option>Financiación y ayudas</option>
+              <option>Flota para empresa o ayuntamiento</option>
+              <option>Ser distribuidor</option>
+            </select></div>
+          <div class="campo"><label for="modelo">Modelo</label>
+            <select id="modelo" name="modelo">
+              <option>Todavía no lo sé</option>
+              <option>VMX 10S 12/18 kW</option><option>VMX 800 Enduro</option><option>VMX 8000 MX</option><option>VMX 10S Cross</option><option>Havocker E-Dirtbike</option><option>Fay Electric Kids</option><option>VL 5000 UTV</option>
+            </select></div>
+        </div>
+        <div class="campo"><label for="mensaje">Cuéntanos qué necesitas</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea></div>
+        <button class="btn btn-p" type="submit">Enviar</button>
+        <p class="legal">Al enviar aceptas la <a href="privacidad.html">política de
+          privacidad</a>. Usaremos tus datos solo para responderte sobre esta consulta.</p>
+        <p id="aviso" class="legal" role="status" style="color:var(--cian)"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="env">
+    <div class="pie">
+      <div><h4>Gama</h4><ul><li><a href="vmx10s.html">VMX 10S 12/18 kW</a></li><li><a href="vmx800-enduro.html">VMX 800 Enduro</a></li><li><a href="vmx8000-mx.html">VMX 8000 MX</a></li><li><a href="vmx10s-cross.html">VMX 10S Cross</a></li><li><a href="havocker.html">Havocker E-Dirtbike</a></li><li><a href="fay-kids.html">Fay Electric Kids</a></li><li><a href="vl5000-utv.html">VL 5000 UTV</a></li></ul></div>
+      <div><h4>Comprar</h4><ul>
+        <li><a href="contacto.html">Reservar prueba</a></li>
+        <li><a href="financiacion.html">Financiación y ayudas</a></li>
+        <li><a href="puntos-de-venta.html">Puntos de venta</a></li>
+      </ul></div>
+      <div><h4>Profesional</h4><ul>
+        <li><a href="empresas.html">Empresas y flotas</a></li>
+        <li><a href="puntos-de-venta.html#distribuidor">Ser distribuidor</a></li>
+        <li><a href="tecnologia.html">Tecnología</a></li>
+      </ul></div>
+      <div><h4>Contacto</h4><ul>
+        <li><a href="nosotros.html">Quiénes somos</a></li>
+        <li><a href="tel:+34636546877">+34 636 546 877</a></li>
+        <li><a href="mailto:info@velimotos.es">info@velimotos.es</a></li>
+      </ul></div>
+    </div>
+    <div class="pie-fin">
+      <span>Velimotor España, motos eléctricas de enduro, trail y trabajo</span>
+      <span><a href="aviso-legal.html">Aviso legal</a> &nbsp; <a href="privacidad.html">Privacidad</a> &nbsp; <a href="cookies.html">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var b=document.querySelector('.abrir'), m=document.getElementById('nav');
+  if(b) b.addEventListener('click',function(){
+    b.setAttribute('aria-expanded',String(m.classList.toggle('abierta')));
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var f=document.getElementById('form'); if(!f) return;
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=document.getElementById('aviso');
+    var falta=['nombre','telefono','email'].filter(function(i){
+      return !document.getElementById(i).value.trim();});
+    if(falta.length){
+      a.textContent='Faltan por rellenar: nombre, teléfono y correo.';
+      document.getElementById(falta[0]).focus(); return;}
+    a.textContent='Formulario listo. Falta conectarlo al CRM o al servicio de correo.';
+  });
+})();
+</script>
+
+</body>
+</html>
