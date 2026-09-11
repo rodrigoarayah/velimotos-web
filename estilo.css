@@ -311,6 +311,15 @@ footer{padding-block:56px 40px;font-size:14px;color:var(--niebla);border-top:1px
 .pie-fin{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;
   padding-top:28px;border-top:1px solid var(--linea);font-size:13px}
 
+/* moto protagonista del hero */
+.hero-moto{position:relative;text-align:center;margin:0}
+.hero-moto img{width:100%;max-width:660px;filter:drop-shadow(0 34px 60px rgba(0,0,0,.55))}
+.hero-moto figcaption{font-family:var(--display);font-weight:600;font-stretch:112%;
+  font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--niebla);margin-top:10px}
+.hero-moto figcaption a{color:var(--cian);text-decoration:none}
+.hero-moto figcaption a:hover{text-decoration:underline}
+@media(max-width:900px){.hero-moto{order:-1}.hero-moto img{max-width:430px}}
+
 /* ─────────── entrada del hero ─────────── */
 @media (prefers-reduced-motion:no-preference){
   .ent{opacity:0;transform:translateY(18px);animation:sube .8s cubic-bezier(.2,.75,.3,1) forwards}
