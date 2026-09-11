@@ -41,7 +41,7 @@
     
     <figure class="hero-moto ent">
       <img src="fotos/havocker-hero.png" alt="Havocker E-Dirtbike, tope de gama Velimotor" fetchpriority="high">
-      <figcaption>Havocker E-Dirtbike · Tope de gama · <a href="havocker.html">Ver ficha</a></figcaption>
+      <figcaption>Havocker E-Dirtbike · Tope de gama · <a href="havocker.html">Ver ficha</a><span class="pista">Pasa el cursor (o el dedo) sobre la moto para ver el detalle</span></figcaption>
     </figure>
   </div>
   <div class="env"><div class="rail"><div class="rail-in">
@@ -221,6 +221,32 @@
     vk.textContent=km.toLocaleString('es-ES');
     va.textContent=Math.round(km/100*5*1.65 - km/100*3*0.15).toLocaleString('es-ES');}
   r.addEventListener('input',up); up();
+})();
+</script>
+
+<script>
+(function(){
+  var fig=document.querySelector('.hero-moto'); if(!fig) return;
+  var img=fig.querySelector('img');
+  var lupa=document.createElement('div'); lupa.className='lupa'; fig.appendChild(lupa);
+  var Z=2.2, R=100;
+  function mover(cx,cy){
+    var r=img.getBoundingClientRect();
+    var x=cx-r.left, y=cy-r.top;
+    if(x<0||y<0||x>r.width||y>r.height){lupa.style.display='none';return;}
+    var fr=fig.getBoundingClientRect();
+    lupa.style.display='block';
+    lupa.style.left=(cx-fr.left-R)+'px';
+    lupa.style.top=(cy-fr.top-R)+'px';
+    lupa.style.backgroundImage='url("'+(img.currentSrc||img.src)+'")';
+    lupa.style.backgroundSize=(r.width*Z)+'px '+(r.height*Z)+'px';
+    lupa.style.backgroundPosition=(-(x*Z-R))+'px '+(-(y*Z-R))+'px';
+  }
+  img.addEventListener('mousemove',function(e){mover(e.clientX,e.clientY)});
+  img.addEventListener('mouseleave',function(){lupa.style.display='none'});
+  img.addEventListener('touchstart',function(e){mover(e.touches[0].clientX,e.touches[0].clientY);e.preventDefault()},{passive:false});
+  img.addEventListener('touchmove',function(e){mover(e.touches[0].clientX,e.touches[0].clientY);e.preventDefault()},{passive:false});
+  img.addEventListener('touchend',function(){lupa.style.display='none'});
 })();
 </script>
 

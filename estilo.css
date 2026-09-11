@@ -313,12 +313,17 @@ footer{padding-block:56px 40px;font-size:14px;color:var(--niebla);border-top:1px
 
 /* moto protagonista del hero */
 .hero-moto{position:relative;text-align:center;margin:0}
-.hero-moto img{width:118%;max-width:820px;margin-inline:-9%;
-  filter:drop-shadow(0 34px 60px rgba(0,0,0,.55))}
+.hero-moto img{width:132%;max-width:960px;margin-inline:-16%;
+  filter:drop-shadow(0 34px 60px rgba(0,0,0,.55));cursor:zoom-in}
+.lupa{position:absolute;width:200px;height:200px;border-radius:50%;
+  border:1px solid rgba(34,228,255,.55);pointer-events:none;display:none;z-index:5;
+  background-color:#0A101C;background-repeat:no-repeat;
+  box-shadow:0 14px 44px rgba(0,0,0,.65), inset 0 0 0 1px rgba(255,255,255,.05)}
 .hero-moto figcaption{font-family:var(--display);font-weight:600;font-stretch:112%;
   font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--niebla);margin-top:10px}
 .hero-moto figcaption a{color:var(--cian);text-decoration:none}
 .hero-moto figcaption a:hover{text-decoration:underline}
+.hero-moto .pista{display:block;font-size:11px;letter-spacing:.06em;color:var(--gris);margin-top:6px}
 @media(max-width:900px){.hero-moto{order:-1}.hero-moto img{width:100%;max-width:520px;margin-inline:0}}
 
 /* ─────────── entrada del hero ─────────── */
