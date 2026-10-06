@@ -1,1 +1,7 @@
+# Datos de la campaña de distribuidores: correos de concesionarios,
+# registro de envíos y datos de clientes. No debe salir del equipo.
+campana/
+
+# Configuración local del entorno de trabajo
+.claude/
 .DS_Store

@@ -335,3 +335,27 @@ footer{padding-block:56px 40px;font-size:14px;color:var(--niebla);border-top:1px
   .ent:nth-child(4){animation-delay:.42s}
   @keyframes sube{to{opacity:1;transform:none}}
 }
+
+/* ─────────── móvil ───────────
+   El 95 % del tráfico entra desde el teléfono, así que manda él.
+   Dos arreglos: los titulares no se salen del borde y la cuota de la
+   calculadora se queda a la vista mientras se mueven los deslizadores. */
+@media(max-width:560px){
+  h1,h2,h3{overflow-wrap:break-word}
+  .hero h1{font-size:clamp(33px,8.8vw,46px)}
+  .cabecera h1{font-size:clamp(31px,8.6vw,44px);max-width:none}
+  .sec-cab h2{font-size:clamp(27px,7.6vw,38px)}
+  .cierre h2{font-size:clamp(29px,8vw,40px)}
+  .panel h3{font-size:clamp(25px,7vw,34px)}
+  .legalidad h2{font-size:clamp(20px,5.6vw,26px)}
+
+  .calc{display:flex;flex-direction:column;gap:20px}
+  .calc .resultado{order:-1;position:sticky;top:68px;z-index:10;
+    padding:18px 20px;border-color:var(--ultramar)}
+  .calc .ahorro{font-size:clamp(42px,13vw,60px)}
+  .calc .resultado p{margin-top:10px;font-size:14.5px}
+  .supuestos{margin-top:22px}
+
+  /* Las rejillas con mínimo fijo desbordaban la pantalla: en móvil, una columna. */
+  .args,.args-2,.cols,.medidas{grid-template-columns:1fr}
+}
